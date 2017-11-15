@@ -1,0 +1,91 @@
+// NAVIGATION
+#navigation
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background: $teal
+  z-index: 999
+  transition-duration: .4s
+  transition-delay: .1s
+  transition-timing-function: cubic-bezier(.82,.1,.14,.95)
+  transform: translateX(-100%)
+  z-index: 1000
+
+#navigation.active
+  transition-duration: .6s
+  transform: translateX(0)
+
+.nav-container
+  margin: 112px auto 0
+  height: auto
+
+.nav-container:hover .nav-item
+  opacity: .15
+
+.nav-container, .nav-item
+  width: 100%
+  color: $black
+  position: relative
+  display: block
+
+.nav-item
+  text-align: left
+  margin: 0 auto -10px
+  height: 100px
+  cursor: pointer
+  transition: .3s
+
+#first:hover, #second:hover, #third:hover
+  opacity: 1
+
+.nav-item:hover .nav-title::after
+  -webkit-transform: translateX(0)
+  transform: translateX(0)
+
+.nav-title
+  position: relative
+  overflow: hidden
+  font-size: 50px
+  opacity: 0
+  transform: translateY(40%)
+  z-index: 1
+  width: calc(100% - 58px)
+
+.item-1.nav-title::after
+  width: calc(100% - 158px)
+
+.nav-title::after
+  content: ''
+  position: absolute
+  top: 34px
+  right: 0
+  width: calc(100% - 215px)
+  height: 4px
+  background: $black
+  z-index: -1
+  transition: all .3s
+  -webkit-transform: translateX(100%)
+  transform: translateX(100%)
+
+.nav-title, .nav-subtitle
+  margin-left: 58px
+
+.nav-subtitle
+  position: relative
+  margin-top: -7px
+  opacity: 0
+  transform: translateY(40%)
+
+.nav-number
+  position: absolute
+  top: 9px
+  left: 38px
+  opacity: 0
+  transform: rotate(0)
+
+.nav-number, .nav-subtitle
+  color: $whitesmoke
+  -webkit-font-smoothing: antialiased
+  font-size: 14px
