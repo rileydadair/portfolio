@@ -111,7 +111,9 @@ button {
   display: inline-block;
   margin-right: 6px;
   z-index: 0;
-  opacity: 1; }
+  opacity: 0;
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px); }
 
 .link-main span {
   letter-spacing: -9px;

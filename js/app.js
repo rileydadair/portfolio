@@ -98,7 +98,7 @@ $(document).ready(function(){
 
 
   // Animate intro text
-  TweenMax.staggerFrom(".link-main div", .23, {opacity:0, y:40, delay:0.2}, 0.08);
+  TweenMax.staggerTo(".link-main div", .23, {opacity:1, y:0, delay:0.2}, 0.08);
 
   let clicked = false
   // Hamburger hover
