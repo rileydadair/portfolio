@@ -152,6 +152,32 @@ $(document).ready(function(){
     }
   }
 
+  // Change hamburger color
+  $(window).scroll(function () {
+    const x = $('body')[0].offsetWidth;
+    const y = $(this).scrollTop();
+    const portfolioPos = $('#portfolio').position();
+    const portfolioHt = $('#portfolio')[0].offsetHeight;
+    const contactPos = $('#contact').position();
 
+    if(x > 1100) {
+      console.log('portfolio');
+      if (y >= (portfolioPos.top - 50) && y <= (portfolioPos.top + portfolioHt - 50)) {
+        console.log('white');
+        $('.hamburger').addClass('white');
+      } else if(y >= (contactPos.top - 50)) {
+        $('.hamburger').addClass('white');
+      }
+      else {
+        $('.hamburger').removeClass('white');
+      }
+    } else {
+      if(y >= (contactPos.top - 50)) {
+        $('.hamburger').addClass('white');
+      } else {
+        $('.hamburger').removeClass('white');
+      }
+    }
+  });
 
 });
