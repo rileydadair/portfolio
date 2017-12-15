@@ -161,9 +161,7 @@ $(document).ready(function(){
     const contactPos = $('#contact').position();
 
     if(x > 1100) {
-      console.log('portfolio');
       if (y >= (portfolioPos.top - 50) && y <= (portfolioPos.top + portfolioHt - 50)) {
-        console.log('white');
         $('.hamburger').addClass('white');
       } else if(y >= (contactPos.top - 50)) {
         $('.hamburger').addClass('white');
