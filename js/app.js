@@ -172,7 +172,7 @@ $(document).ready(function(){
         $('.hamburger').removeClass('white');
       }
     } else {
-      if(y >= (contactPos.top - 50)) {
+      if(y >= (contactPos.top - 30)) {
         $('.hamburger').addClass('white');
       } else {
         $('.hamburger').removeClass('white');
