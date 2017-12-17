@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+  // slide version
   var $animation_elements = $('.left');
   var $animation_elements_two = $('.right');
   var $animation_elements_three = $('.third');
