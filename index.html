@@ -24,8 +24,8 @@ _  /_/ /_  /___      / /_/ /_  _, _/__/ /  / /_/ / __/ /  _  /|  / _  ___ |  /__
 </head>
 <body>
   <main id="main-container">
-    <section id="navigation">
-      <div class="nav-container">
+    <header id="navigation">
+      <nav class="nav-container">
         <a href="#introduction" id="first" class="nav-item" onclick="toggleNav()">
           <div class="nav-title item-1">
             Home
@@ -47,10 +47,10 @@ _  /_/ /_  /___      / /_/ /_  _, _/__/ /  / /_/ / __/ /  _  /|  / _  ___ |  /__
           <div class="nav-subtitle">Wanna grab a coffee?</div>
           <div class="nav-number">02</div>
         </a>
-      </div>
-    </section>
+      </nav>
+    </header>
     <div id="hamburger-container" onclick="toggleNav()">
-      <button class="hamburger hamburger-spin" ng-click="toggleNav()">
+      <button class="hamburger hamburger-spin">
         <span class="hamburger-box">
           <div class="hamburger-mask">
             <span class="hamburger-inner"></span>
@@ -59,7 +59,7 @@ _  /_/ /_  /___      / /_/ /_  _, _/__/ /  / /_/ / __/ /  _  /|  / _  ___ |  /__
         </span>
       </button>
     </div>
-    <section id="introduction">
+    <div id="introduction">
       <div class="introduction-text">
         <div class="intro-main">
           <h1 class="link-main">
@@ -98,7 +98,6 @@ _  /_/ /_  /___      / /_/ /_  _, _/__/ /  / /_/ / __/ /  _  /|  / _  ___ |  /__
       <div class="line-container line-10">
         <div class="line-inside"></div>
       </div>
-      <!-- <div class="welcome-bg">welcome</div> -->
       <div class="bg-line line-light bg-line-1"></div>
       <div class="bg-line line-light bg-line-2"></div>
       <div class="bg-line line-light bg-line-3"></div>
@@ -106,8 +105,8 @@ _  /_/ /_  /___      / /_/ /_  _, _/__/ /  / /_/ / __/ /  _  /|  / _  ___ |  /__
       <div class="bg-line line-light bg-line-5"></div>
       <div class="bg-line line-light bg-line-6"></div>
       <div class="bg-line line-light bg-line-7"></div>
-    </section>
-    <section id="portfolio">
+    </div>
+    <div id="portfolio">
       <div id="project-one" class="project-container">
         <a href="http://ui-board.com/#/directory36" target="_blank" class="card left">
           <div class="card-info">
@@ -131,7 +130,7 @@ _  /_/ /_  /___      / /_/ /_  _, _/__/ /  / /_/ / __/ /  _  /|  / _  ___ |  /__
         </a>
       </div>
       <div id="project-three" class="project-container">
-        <a href="https://craigslist-redesign.herokuapp.com/" target="_blank" class="card third">
+        <a href="https://craigslist-redesign.herokuapp.com/" target="_blank" class="card left">
           <div class="card-info">
             <div class="card-title">Craigslist</div>
             <div class="card-project">Redesign Concept</div>
@@ -148,16 +147,15 @@ _  /_/ /_  /___      / /_/ /_  _, _/__/ /  / /_/ / __/ /  _  /|  / _  ___ |  /__
       <div class="bg-line line-dark bg-line-5"></div>
       <div class="bg-line line-dark bg-line-6"></div>
       <div class="bg-line line-dark bg-line-7"></div>
-    </section>
+    </div>
 
-    <section id="message">
+    <div id="message">
       <div class="message-text">
         <h1>I like to mix code surprising visuals and pleasing interactions with...</h1>
         <div class="skills-text">
           <h3>HTML5 / CSS / JavaScript / React / AngularJS / jQuery / Node.JS / Express / PostgreSQL</h3>
         </div>
       </div>
-      <!-- <div class="skills-bg">skills</div> -->
       <div class="bg-line line-light bg-line-1"></div>
       <div class="bg-line line-light bg-line-2"></div>
       <div class="bg-line line-light bg-line-3"></div>
@@ -165,7 +163,7 @@ _  /_/ /_  /___      / /_/ /_  _, _/__/ /  / /_/ / __/ /  _  /|  / _  ___ |  /__
       <div class="bg-line line-light bg-line-5"></div>
       <div class="bg-line line-light bg-line-6"></div>
       <div class="bg-line line-light bg-line-7"></div>
-    </section>
+    </div>
 
     <footer id="contact">
       <div class="footer-text">
@@ -221,8 +219,6 @@ _  /_/ /_  /___      / /_/ /_  _, _/__/ /  / /_/ / __/ /  _  /|  / _  ___ |  /__
       <div id="dark" class="bg-line line-dark bg-line-7"></div>
     </footer>
   </main>
-
-
   <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
   <script src="./js/app.js"></script>

@@ -1,5 +1,4 @@
 // BREAKPOINTS
-
 @media only screen and (max-width: 425px)
   .link-footer a
     font-size: 27px
@@ -44,7 +43,7 @@
     width: 86%
     padding-top: 86%
 
-  .right.in-view-two
+  .right.active
     opacity: 1
     transform: translate3d(17%, 0, 0)
 
@@ -60,10 +59,6 @@
   .card
     width: 84%
     padding-top: 56%
-
-  .right.in-view-two
-    opacity: 1
-    transform: translate3d(17%, 0, 0)
 
 @media only screen and (min-width: 800px)
   h1
@@ -97,7 +92,7 @@
   .card
     width: 87.5%
 
-  .right.in-view-two
+  .right.active
     opacity: 1
     transform: translate3d(15%, 0, 0)
 
@@ -156,11 +151,10 @@
     overflow: visible
 
   .right
-    transition: all .3s ease-out
     opacity: 0
     transform: translate3d(70%, 140px, 0)
 
-  .right.in-view-two
+  .right.active
     opacity: 1
     transform: translate3d(49.8%, 0, 0)
 
@@ -170,24 +164,6 @@
   .card-info
     top: 103%
     left: 0
-
-
-  // .card-line
-  //   width: 30%
-
-  // .card:hover .card-info::before
-  //   opacity: .9
-  //
-  // .card-info::before
-  //   position: absolute
-  //   top: 0
-  //   right: -5%
-  //   content: ""
-  //   width: 36%
-  //   height: 141%
-  //   background: #080808
-  //   opacity: 0
-  //   transition: .3s
 
   .card-title
     font-size: 42px
@@ -220,15 +196,7 @@
     opacity: 0
 
   .card-bg
-    // filter: grayscale(0)
     transition: all .3s
-
-  // .card-info
-  //   opacity: 0
-  //   transition: all .3s
-  //
-  // .card:hover .card-info
-  //   opacity: 1
 
   .card:hover .card-bg
     filter: grayscale(0)
