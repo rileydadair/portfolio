@@ -207,6 +207,7 @@ button {
   width: 89%;
   padding-top: 89%;
   overflow: hidden;
+  opacity: 0;
   -webkit-transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
 
@@ -219,10 +220,24 @@ button {
 .card:hover .card-line {
   width: 119px; }
 
-.left .card-info, .third .card-info {
-  position: absolute;
-  right: 10%;
-  text-align: right; }
+.left {
+  -webkit-transform: translate3d(-20%, 140px, 0);
+          transform: translate3d(-20%, 140px, 0); }
+
+.right {
+  -webkit-transform: translate3d(20%, 140px, 0);
+          transform: translate3d(20%, 140px, 0); }
+
+.left.active {
+  opacity: 1;
+  margin-left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0); }
+
+.right.active {
+  opacity: 1;
+  -webkit-transform: translate3d(12.5%, 0, 0);
+          transform: translate3d(12.5%, 0, 0); }
 
 .card-info {
   position: absolute;
@@ -232,31 +247,13 @@ button {
   z-index: 99;
   color: #F2F2F2; }
 
-.left .card-info .card-line, .third .card-info .card-line {
+.left .card-info {
+  position: absolute;
+  right: 10%;
+  text-align: right; }
+
+.left .card-info .card-line {
   right: 0; }
-
-.left, .third {
-  opacity: 0;
-  -webkit-transform: translate3d(-20%, 140px, 0);
-          transform: translate3d(-20%, 140px, 0); }
-
-.left.in-view, .third.in-view-three {
-  opacity: 1;
-  margin-left: 0;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0); }
-
-.right {
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-  opacity: 0;
-  -webkit-transform: translate3d(20%, 140px, 0);
-          transform: translate3d(20%, 140px, 0); }
-
-.right.in-view-two {
-  opacity: 1;
-  -webkit-transform: translate3d(12.5%, 0, 0);
-          transform: translate3d(12.5%, 0, 0); }
 
 .card-title {
   position: relative;
@@ -691,7 +688,7 @@ button {
     width: 86%;
     padding-top: 86%; }
 
-  .right.in-view-two {
+  .right.active {
     opacity: 1;
     -webkit-transform: translate3d(17%, 0, 0);
             transform: translate3d(17%, 0, 0); } }
@@ -705,12 +702,7 @@ button {
 
   .card {
     width: 84%;
-    padding-top: 56%; }
-
-  .right.in-view-two {
-    opacity: 1;
-    -webkit-transform: translate3d(17%, 0, 0);
-            transform: translate3d(17%, 0, 0); } }
+    padding-top: 56%; } }
 @media only screen and (min-width: 800px) {
   h1 {
     font-size: 48px; }
@@ -743,7 +735,7 @@ button {
   .card {
     width: 87.5%; }
 
-  .right.in-view-two {
+  .right.active {
     opacity: 1;
     -webkit-transform: translate3d(15%, 0, 0);
             transform: translate3d(15%, 0, 0); } }
@@ -803,13 +795,11 @@ button {
     overflow: visible; }
 
   .right {
-    -webkit-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
     opacity: 0;
     -webkit-transform: translate3d(70%, 140px, 0);
             transform: translate3d(70%, 140px, 0); }
 
-  .right.in-view-two {
+  .right.active {
     opacity: 1;
     -webkit-transform: translate3d(49.8%, 0, 0);
             transform: translate3d(49.8%, 0, 0); }
