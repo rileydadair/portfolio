@@ -3,7 +3,7 @@
   position: relative
   display: block
   margin: 0 auto
-  padding: 15% 0 0
+  padding: 0
   width: 100vw
   max-width: 100vw
   z-index: 99
@@ -26,13 +26,13 @@
   opacity: 0
   transition: all .4s cubic-bezier(0.250, 0.460, 0.450, 0.940)
 
-.card:hover .card-overlay
+.card:hover .card-overlay, .card:active .card-overlay
   opacity: .65
 
-.card:hover .card-overlay.darker
+.card:hover .card-overlay.darker, .card:active .card-overlay.darker
   opacity: .89
 
-.card:hover .card-line
+.card:hover .card-line, .card:active .card-line
   width: 119px
 
 .left
