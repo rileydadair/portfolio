@@ -88,22 +88,24 @@ $(document).ready(function () {
     const portfolioHt = $('#portfolio')[0].offsetHeight;
     const contactPos = $('#contact').position();
 
-    if (x > 1100) {
+    // if (x > 1100) {
       if (y >= (portfolioPos.top - 50) && y <= (portfolioPos.top + portfolioHt - 50)) {
-        $('.hamburger').addClass('white');
-      } else if (y >= (contactPos.top - 50)) {
-        $('.hamburger').addClass('white');
+        $('.hamburger').addClass('black');
       }
+      // else if (y >= (contactPos.top - 50)) {
+      //   $('.hamburger').addClass('black');
+      // }
       else {
-        $('.hamburger').removeClass('white');
+        $('.hamburger').removeClass('black');
       }
-    } else {
-      if (y >= (contactPos.top - 30)) {
-        $('.hamburger').addClass('white');
-      } else {
-        $('.hamburger').removeClass('white');
-      }
-    }
+    // }
+    // else {
+    //   if (y >= (contactPos.top - 30)) {
+    //     $('.hamburger').addClass('white');
+    //   } else {
+    //     $('.hamburger').removeClass('white');
+    //   }
+    // }
   });
 
   // Slide in animation ********************************************************

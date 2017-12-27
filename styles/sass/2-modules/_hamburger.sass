@@ -67,7 +67,7 @@
 .hamburger-inner, .hamburger-inner::after, .hamburger-inner::before
   width: 20px
   height: 2px
-  background-color: $black
+  background-color: $whitesmoke
   position: absolute
   transition-property: -webkit-transform
   transition-property: transform
@@ -121,8 +121,8 @@
     transition: bottom .1s ease-out,transform .3s .1s cubic-bezier(.215,.61,.355,1)
     transition: bottom .1s ease-out,transform .3s .1s cubic-bezier(.215,.61,.355,1),-webkit-transform .3s .1s cubic-bezier(.215,.61,.355,1)
 
-// Color white change in dark background sections
-.hamburger.white
+// Color black change in dark background sections
+.hamburger.black
     .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after
-      background: $whitesmoke
+      background: $black
       transition: all .3s
