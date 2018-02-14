@@ -159,7 +159,12 @@ button:focus {
   margin-top: 20px;
   opacity: 0;
   transform: translateY(100%);
-  transition: .3s ease-out 0.4s;
+  transition: .3s ease-out 0.4s, opacity .5s linear 0.4s;
+}
+
+.project.active .cta {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .btn-reveal {
@@ -195,11 +200,6 @@ button:focus {
 
 .btn-reveal:hover { color: #fff; }
 .btn-reveal:hover::after { transform: scale3d(1, 1, 1); }
-
-.project.active .cta {
-  opacity: 1;
-  transform: translateY(0);
-}
 
 .mask {
   height: 100%;
