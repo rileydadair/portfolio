@@ -1,15 +1,19 @@
 @font-face {
   font-family: 'gilroy-bold';
-  src: url('../../assets/fonts/gilroy-extrabold-webfont.woff2') format('woff2');
+  src: url('../../assets/fonts/gilroy-extrabold-webfont.woff') format('woff'), url('../../assets/fonts/gilroy-extrabold-webfont.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'gilroy-light';
-  src: url('../../assets/fonts/gilroy-light-webfont.woff2') format('woff2');
+  src: url('../../assets/fonts/gilroy-light-webfont.woff') format('woff'), url('../../assets/fonts/gilroy-light-webfont.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
+}
+
+:root {
+  --color: #0D51FF;
 }
 
 * {
@@ -175,8 +179,8 @@ button:focus {
   letter-spacing: 1px;
   padding: 16px 44px;
   background: transparent;
-  color: #0D51FF;
-  border: 2px solid #0D51FF;
+  color: var(--color);
+  border: 2px solid var(--color);
   border-radius: 50px;
   overflow: hidden;
   transition: .2s;
@@ -186,7 +190,7 @@ button:focus {
 
 .btn-reveal::after {
   content: '';
-  background: #0D51FF;
+  background: var(--color);
   position: absolute;
   top: 0;
   left: 0;
@@ -228,7 +232,7 @@ button:focus {
 .mask-header{
   position: absolute;
   left: 0;
-  color: #0D51FF;
+  color: var(--color);
   font-size: 500px;
   line-height: 380px;
   text-transform: uppercase;
@@ -276,7 +280,7 @@ button:focus {
   top: 0;
   left: 0;
   opacity: 1;
-  background: #0D51FF;
+  background: var(--color);
   z-index: 1;
   transition: opacity .6s;
 }
