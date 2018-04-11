@@ -1,12 +1,3 @@
-<!--
-__________________   __________________________________________   ______________       _____________ __
-___  __ )__  ____/   __  __ \__  __ \___  _/_  ____/___  _/__  | / /__    |__  /       __  __ \__  //_/
-__  __  |_  __/      _  / / /_  /_/ /__  / _  / __  __  / __   |/ /__  /| |_  /        _  / / /_  ,<
-_  /_/ /_  /___      / /_/ /_  _, _/__/ /  / /_/ / __/ /  _  /|  / _  ___ |  /___      / /_/ /_  /| |
-/_____/ /_____/      \____/ /_/ |_| /___/  \____/  /___/  /_/ |_/  /_/  |_/_____/      \____/ /_/ |_|
-
-V2
--->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,190 +12,20 @@ V2
   <meta property="og:image" content="http://rileyadair.com/assets/media/riley-adair.png">
   <meta property="og:site_name" content="RileyAdair">
   <meta name="description" content="Riley Adair - Frontend Developer based in Dallas.">
-  <link rel="stylesheet" href="./styles/css/app.css">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono|Montserrat:800">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 <body>
-  <main id="main-container">
-    <header id="navigation">
-      <nav class="nav-container">
-        <a href="#introduction" id="first" class="nav-item" onclick="toggleNav()">
-          <div class="nav-title item-1">
-            Home
-          </div>
-          <div class="nav-subtitle">Glad you're here</div>
-          <div class="nav-number">00</div>
-        </a>
-        <a href="#portfolio" id="second" class="nav-item" onclick="toggleNav()">
-          <div class="nav-title">
-            Portfolio
-          </div>
-          <div class="nav-subtitle">Selection of my work</div>
-          <div class="nav-number">01</div>
-        </a>
-        <a href="#contact" id="third" class="nav-item" onclick="toggleNav()">
-          <div class="nav-title">
-            Contact
-          </div>
-          <div class="nav-subtitle">Wanna grab a coffee?</div>
-          <div class="nav-number">02</div>
-        </a>
-      </nav>
-    </header>
-    <div id="hamburger-container" onclick="toggleNav()">
-      <button class="hamburger hamburger-spin">
-        <span class="hamburger-box">
-          <div class="hamburger-mask">
-            <span class="hamburger-inner"></span>
-            <span class="hamburger-hover"></span>
-          </div>
-        </span>
-      </button>
-    </div>
-    <div id="introduction">
-      <div class="introduction-text">
-        <div class="intro-main">
-          <h1 class="link-main">
-            <div>Riley</div><div>Adair</div><span><div>-----</div></span><div class="teal">Creative</div><div>Developer</div><br>
-            <div>I</div><div class="push">enjoy</div><div class="tighter">building</div>
-            <div class="teal">beautiful</div>
-            <br><div class="tight">and</div>
-            <div>thoughtful</div><div></div><div class="tight left-tight teal">experiences</div><div>.</div>
-          </h1>
-        </div>
-      </div>
-      <div class="line-container line-1">
-        <div class="line-inside dark"></div>
-      </div>
-      <div class="line-container line-2">
-        <div class="line-inside dark"></div>
-      </div>
-      <div class="line-container line-4">
-        <div class="line-inside dark"></div>
-      </div>
-      <div class="line-container line-5">
-        <div class="line-inside dark"></div>
-      </div>
-      <div class="line-container line-6">
-        <div class="line-inside dark"></div>
-      </div>
-      <div class="line-container line-7">
-        <div class="line-inside dark"></div>
-      </div>
-      <div class="line-container line-8">
-        <div class="line-inside dark"></div>
-      </div>
-      <div class="line-container line-9">
-        <div class="line-inside dark"></div>
-      </div>
-      <div class="line-container line-10">
-        <div class="line-inside dark"></div>
-      </div>
-      <div class="bg-line line-dark bg-line-1"></div>
-      <div class="bg-line line-dark bg-line-2"></div>
-      <div class="bg-line line-dark bg-line-3"></div>
-      <div class="bg-line line-dark bg-line-4"></div>
-      <div class="bg-line line-dark bg-line-5"></div>
-      <div class="bg-line line-dark bg-line-6"></div>
-      <div class="bg-line line-dark bg-line-7"></div>
-    </div>
-    <div id="portfolio">
-      <div id="project-one" class="project-container">
-        <a href="http://ui-board.com/#/directory36" target="_blank" class="card left">
-          <div class="card-info">
-            <div class="card-title">ui board</div>
-            <div class="card-project">Visual Bookmarking</div>
-            <div class="card-line"></div>
-          </div>
-          <div class="card-overlay darker"></div>
-          <img id="card-ui-board" class="card-bg" src="./assets/images/ui-board/ui-board_directory.png" alt="">
-        </a>
-      </div>
-      <div id="project-two" class="project-container">
-        <a href="https://vimeo.com/243164696" target="_blank" class="card right">
-          <div class="card-info">
-            <div class="card-title">Spotify</div>
-            <div class="card-project">Personal Project</div>
-            <div class="card-line"></div>
-          </div>
-          <div class="card-overlay"></div>
-          <img id="card-spotify" class="card-bg" src="./assets/images/spotify/spotify_artist_bg1.png" alt="">
-        </a>
-      </div>
-      <div id="project-three" class="project-container">
-        <a href="https://craigslist-redesign.herokuapp.com/" target="_blank" class="card left">
-          <div class="card-info">
-            <div class="card-title">Craigslist</div>
-            <div class="card-project">Redesign Concept</div>
-            <div class="card-line"></div>
-          </div>
-          <div class="card-overlay darker"></div>
-          <img id="card-craigslist" class="card-bg" src="./assets/images/craigslist/cl_landing.png" alt="">
-        </a>
-      </div>
-      <div class="bg-line line-light bg-line-1"></div>
-      <div class="bg-line line-light bg-line-2"></div>
-      <div class="bg-line line-light bg-line-3"></div>
-      <div class="bg-line line-light bg-line-4"></div>
-      <div class="bg-line line-light bg-line-5"></div>
-      <div class="bg-line line-light bg-line-6"></div>
-      <div class="bg-line line-light bg-line-7"></div>
-    </div>
-    <footer id="contact">
-      <div class="footer-text">
-        <div class="vertical-text">Email</div>
-        <div class="contact-main">
-          <h1 class="link-main link-footer">
-            Get in touch with me.
-            <br>
-            <a href="mailto:hello@rileyadair.com">hello@rileyadair.com</a>
-          </h1>
-        </div>
-        <div class="contacts-secondary">
-          <h2>Thank you for your time! I wish you a pleasant day.</h2>
-        </div>
-        <div class="links">
-          <a href="https://www.linkedin.com/in/riley-adair/" target="_blank">LinkedIn</a>
-          <a href="https://github.com/RileyAdair" target="_blank">Github</a>
-        </div>
-      </div>
-      <div class="line-container line-1">
-        <div class="line-inside dark"></div>
-      </div>
-      <div class="line-container line-2">
-        <div class="line-inside dark"></div>
-      </div>
-      <div class="line-container line-4">
-        <div class="line-inside dark"></div>
-      </div>
-      <div class="line-container line-5">
-        <div class="line-inside dark"></div>
-      </div>
-      <div class="line-container line-6">
-        <div class="line-inside dark"></div>
-      </div>
-      <div class="line-container line-7">
-        <div class="line-inside dark"></div>
-      </div>
-      <div class="line-container line-8">
-        <div class="line-inside dark"></div>
-      </div>
-      <div class="line-container line-9">
-        <div class="line-inside dark"></div>
-      </div>
-      <div class="line-container line-10">
-        <div class="line-inside dark"></div>
-      </div>
-      <div id="dark" class="bg-line line-dark bg-line-1"></div>
-      <div id="dark" class="bg-line line-dark bg-line-2"></div>
-      <div id="dark" class="bg-line line-dark bg-line-3"></div>
-      <div id="dark" class="bg-line line-dark bg-line-4"></div>
-      <div id="dark" class="bg-line line-dark bg-line-5"></div>
-      <div id="dark" class="bg-line line-dark bg-line-6"></div>
-      <div id="dark" class="bg-line line-dark bg-line-7"></div>
-    </footer>
-  </main>
-  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
-  <script src="./js/app.js"></script>
+  <div>
+    <h3>Riley Adair</h3>
+    <h4>Interactive Developer </h4>
+    <h5>Be original okay <span>✌️</span></h5>
+  </div>
+  <ul>
+    <li><a href="https://github.com/rileyadair" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+    <li><a href="https://codepen.io/RileyAdair/" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i></a></li>
+    <li><a href="https://www.linkedin.com/in/riley-adair/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+  </ul>
 </body>
 </html>
