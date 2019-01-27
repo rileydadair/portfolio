@@ -15,7 +15,10 @@ html {
 }
 
 body {
-  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  background-color: $color-beige;
+  color: $color-black;
+  font-family: 'neo', Futura, "Trebuchet MS", Arial, sans-serif;
+  // font-weight: 700;
   height: 100%;
   width: 100%;
   -webkit-font-smoothing: antialiased;
@@ -35,6 +38,9 @@ canvas {
   vertical-align: middle;
 }
 
-h1 {
-  @include center-xy; // FPO
+::selection {
+  background: transparent;
+}
+::-moz-selection {
+  background: transparent;
 }
