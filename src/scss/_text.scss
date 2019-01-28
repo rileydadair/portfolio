@@ -1,0 +1,31 @@
+.text {
+  font-size: 8.4vw;
+  letter-spacing: -.055em;
+  line-height: 1.1;
+  padding-bottom: 24.4vw;
+  pointer-events: none;
+
+  @media (min-width: $screen-sm-min) {
+    line-height: 1;
+    font-size: 7.43889vw;
+    // padding-left: 6.66667%;
+    padding-bottom: 21.4vw;
+    // padding-right: 5%;
+
+
+    // max-width: 83.88889%;
+
+    max-width: 86.88889%;
+  }
+
+  @media (min-width: $screen-lg-min) {
+    padding-bottom: 18.4vw;
+    // margin-left: auto;
+  }
+
+  &:last-child { padding-bottom: 0; }
+}
+
+.padding {
+  padding: 0 .6vw;
+}

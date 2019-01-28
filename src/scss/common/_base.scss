@@ -15,14 +15,21 @@ html {
 }
 
 body {
-  background-color: $color-beige;
-  color: $color-black;
+  background-color: $color-black;
+  color: $color-white;
   font-family: 'neo', Futura, "Trebuchet MS", Arial, sans-serif;
-  // font-weight: 700;
+  font-weight: 700;
+  // font-weight: 400;
   height: 100%;
   width: 100%;
+  transition: background-color .35s;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  &.is-desktop { overflow: hidden; }
+  // &.is-hovering { background-color: $color-black; cursor: none; }
+
+  @media (min-width: $screen-sm-min) { font-weight: 700; }
 }
 
 button {
@@ -31,6 +38,7 @@ button {
 }
 
 a {
+  color: inherit;
   text-decoration: none;
 }
 
@@ -43,4 +51,12 @@ canvas {
 }
 ::-moz-selection {
   background: transparent;
+}
+
+::-webkit-scrollbar { 
+  display: none; 
+}
+
+::-moz-scrollbar {
+display: none;
 }

@@ -1,32 +1,26 @@
+.is-desktop {
+  .main {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+}
+
 .main {
   position: absolute;
   top: 0;
-  // left: 27.08333vw;
-  padding-left: 6.25%;
+  left: 0;
   padding-top: 20vh;
   padding-bottom: 20vh;
-}
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
 
-.text {
-  // font-size: 10vw;
-  font-size: 6.43889vw;
-  letter-spacing: -.055em;
-  // letter-spacing: -.5vw;
-  line-height: 1.02;
-  padding-left: 6.66667%;
-  padding-right: 5%;
-  // padding-right: 4.44444%;
-  margin-left: auto;
-  max-width: 88.88889%;
-  pointer-events: none;
-}
-
-.stroke {
-  color: transparent;
-  -webkit-text-stroke: 1px $color-black;
-  font-weight: 700;
-}
-
-.padding {
-  padding: 0 .6vw;
+  @media (min-width: $screen-sm-min) {
+    padding-left: 6.25%;
+    padding-top: 16vh;
+    padding-bottom: 16vh;
+    padding-right: 0;
+  }
 }
