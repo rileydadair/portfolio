@@ -7,8 +7,12 @@
   }
 }
 
+.light-theme {
+  .main { background-color: $color-white; }
+}
+
 .main {
-  background-color: $color-white;
+  background-color: $color-black;
   position: absolute;
   top: 0;
   left: 0;

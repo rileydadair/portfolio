@@ -8,6 +8,7 @@ export default {
     this.hovers = [];
     this.DOM = {};
     this.DOM.links = document.querySelectorAll('.js-link');
+    this.DOM.toggleBtn = document.querySelector('.js-toggle');
     
     this.smoothScroll = new Smooth({
       callback: this.updateScrollPos.bind(this),
@@ -22,6 +23,8 @@ export default {
     this.DOM.links.forEach(el => {
       this.hovers.push(new Hover(el));
     });
+
+    this.DOM.toggleBtn.addEventListener('click', () => this.toggleTheme());
   },
 
   updateScrollPos(vars) {
@@ -31,5 +34,9 @@ export default {
     }
 
     this.current = current;
+  },
+
+  toggleTheme() {
+    document.body.classList.toggle('light-theme');
   }
 };
