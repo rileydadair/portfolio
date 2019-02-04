@@ -1,34 +1,46 @@
 .text {
-  color: white;
-  mix-blend-mode: exclusion;
-
-  font-size: 8.4vw;
-  letter-spacing: -.055em;
-  line-height: 1.1;
-  padding-bottom: 24.4vw;
+  font-size: 9.3vw;
+  letter-spacing: -.03em;
+  line-height: 1.2;
+  padding-bottom: 32.4vw;
   pointer-events: none;
+  opacity: 0;
 
   @media (min-width: $screen-sm-min) {
-    line-height: 1;
-    font-size: 7.43889vw;
-    // padding-left: 6.66667%;
-    padding-bottom: 21.4vw;
-    // padding-right: 5%;
-
-
-    // max-width: 83.88889%;
-
+    font-size: 6.23889vw;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -.055em;
+    padding-bottom: 22.4vw;
     max-width: 86.88889%;
+
+    br {
+      display: none;
+    }
   }
 
   @media (min-width: $screen-lg-min) {
-    padding-bottom: 18.4vw;
-    // margin-left: auto;
+    padding-bottom: 20.8vw;
   }
 
   &:last-child { padding-bottom: 0; }
-}
 
-.padding {
-  padding: 0 .6vw;
+  &.is-shown {
+    opacity: 1;
+
+    .link__title {
+      @media (min-width: $screen-sm-min) {
+        color: transparent;
+        mix-blend-mode: exclusion;
+        -webkit-text-stroke: 1px white;
+        text-decoration: none;
+      }
+    }
+
+    .hover-img {
+      @media (min-width: $screen-sm-min) {
+        display: block;
+      }
+    }
+  }
 }

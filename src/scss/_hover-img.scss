@@ -1,0 +1,55 @@
+.link--portrait {
+  .hover-img {
+    height: 328px;
+    width: 210px;
+    top: -164px;
+    left: -105px;
+
+    @media (min-width: $screen-xl-min) {
+      height: 378px;
+      width: 242px;
+      top: -189px;
+      left: -121px;
+    }
+  }
+}
+
+.link--hello {
+  .hover-img {
+    height: 80px;
+    width: 80px;
+    top: -40px;
+    left: -40px;
+
+    @media (min-width: $screen-xl-min) {
+      height: 100px;
+      width: 100px;
+      top: -50px;
+      left: -50px;
+    }
+  }
+}
+
+.hover-img {
+  background-size: cover;
+  background-position: 50% 50%;
+  display: none;
+  position: fixed;
+  height: 210px;
+  width: 328px;
+  top: -105px;
+  left: -164px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity .65s cubic-bezier(.15,.9,.34,.95), visibility .65s cubic-bezier(.15,.9,.34,.95), transform .6s cubic-bezier(.15,.9,.34,.95);
+  transform: scale(1.15) translateZ(0);
+  visibility: hidden;
+  z-index: 1;
+
+  @media (min-width: $screen-xl-min) {
+    height: 242px;
+    width: 378px;
+    top: -121px;
+    left: -189px;
+  }
+}

@@ -22,7 +22,7 @@ class Hover {
         x: x,
         y: y + this.currentScrollPos,
         scale: 1,
-      }, -.015);
+      }, -.017);
     };
 
     this.mouseenterFn = (e) => {
@@ -39,7 +39,6 @@ class Hover {
     TweenMax.set(this.DOM.revealImgs, {
       x: `${this.DOM.el.getBoundingClientRect().x + 300}px`,
       y: `${this.DOM.el.getBoundingClientRect().y + 200}px`,
-      scale: 1.2
     });
     
     this.DOM.el.addEventListener('mouseenter', this.mouseenterFn);
@@ -53,7 +52,7 @@ class Hover {
 
   hideImage() {
     document.body.classList.remove('is-hovering');
-    TweenMax.set(this.DOM.revealImgs, {scale: 1.2});
+    TweenMax.set(this.DOM.revealImgs, {scale: 1.15});
   }
 
   updateScrollPos(val) {

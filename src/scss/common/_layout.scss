@@ -1,31 +1,26 @@
-.is-desktop {
-  .main {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-  }
-}
-
-.light-theme {
-  .main { background-color: $color-white; }
-}
-
 .main {
-  background-color: $color-black;
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding-top: 20vh;
-  padding-bottom: 20vh;
+  background-color: $color-white;
+  padding-top: 28vh;
+  padding-bottom: 28vh;
   padding-left: 20px;
   padding-right: 20px;
   width: 100%;
 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
   @media (min-width: $screen-sm-min) {
-    padding-left: 6.25%;
-    padding-top: 16vh;
-    padding-bottom: 16vh;
-    padding-right: 0;
+    padding: 28.4vh 0 28.4vh 6.25%;
   }
 }
+
+// .is-desktop {
+//   .main {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//   }
+// }
