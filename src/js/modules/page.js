@@ -18,9 +18,10 @@ export default {
       vs : { mouseMultiplier: 0.4 },
     });
 
-    this.smoothScroll.init();
-
-    setTimeout(() =>this.checkScroll(), 500);
+    setTimeout(() => {
+      this.checkScroll();
+      this.smoothScroll.init();
+    }, 500);
   },
 
   show(el) {
