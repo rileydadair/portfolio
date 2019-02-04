@@ -23,8 +23,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  overflow: hidden;
-  // &.is-desktop { overflow: hidden; }
+  &.is-desktop { overflow: hidden; }
 }
 
 button {

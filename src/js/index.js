@@ -1,9 +1,9 @@
 import '../scss/index.scss';
 import States from './modules/states';
-import page from './modules/page';
+import scroll from './modules/scroll';
 
 function app() {
-  page.init(States.deviceType);
+  scroll.init(States.deviceType);
 
   document.body.classList.add(`is-${States.deviceType}`);
 

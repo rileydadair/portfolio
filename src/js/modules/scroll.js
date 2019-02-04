@@ -7,21 +7,30 @@ export default {
     this.deviceType = deviceType;
     this.current = 0;
     this.hovers = [];
+    this.mobileScroll = this.handleView.bind(this);
     this.DOM = {};
     this.DOM.scrolls = Array.from(document.querySelectorAll('.js-scroll'));
     
-    this.smoothScroll = new Smooth({
-      callback: this.handleScroll.bind(this),
-      preload: false,
-      native: false,
-      section: document.querySelector('.main'),
-      vs : { mouseMultiplier: 0.4 },
-    });
+    if (this.deviceType === 'desktop') {
+      this.smoothScroll = new Smooth({
+        callback: this.handleScroll.bind(this),
+        preload: false,
+        native: false,
+        section: document.querySelector('.main'),
+        vs : { mouseMultiplier: 0.4 },
+      });
+    } else {
+      this.initMobileEvents();
+    }
 
     setTimeout(() => {
-      this.checkScroll();
-      this.smoothScroll.init();
+      this.handleView();
+      if (this.deviceType === 'desktop') this.smoothScroll.init();
     }, 500);
+  },
+
+  initMobileEvents() {
+    window.addEventListener('scroll', this.mobileScroll);
   },
 
   show(el) {
@@ -55,7 +64,7 @@ export default {
     return elOffset <= viewBottom && elTop > viewTop;
   },
 
-  checkScroll() {
+  handleView() {
     if (this.DOM.scrolls.length) {
       this.DOM.scrolls.forEach((el, index) => {
         if (this.isInView(el, .35)) {
@@ -63,11 +72,13 @@ export default {
           this.DOM.scrolls.splice(index, 1);
         }
       });
+    } else if (this.deviceType !== 'desktop') {
+      window.removeEventListener('scroll', this.mobileScroll);
     }
   },
 
   handleScroll(vars) {
-    this.checkScroll();
+    this.handleView();
 
     if (this.deviceType === 'desktop') {
       const current = Math.round(vars.current);
