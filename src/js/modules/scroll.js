@@ -17,7 +17,7 @@ export default {
         preload: false,
         native: false,
         section: document.querySelector('.main'),
-        vs : { mouseMultiplier: 0.8 },
+        vs : { mouseMultiplier: 0.6 },
       });
     } else {
       this.initMobileEvents();
