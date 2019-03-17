@@ -35,7 +35,7 @@ export default {
 
   show(el) {
     TweenMax.to(el, 1, {
-      startAt: { opacity: 0, x: '6%' },
+      startAt: { opacity: 0, x: '5%' },
       opacity: 1,
       x: '0%',
       onComplete: () => {
