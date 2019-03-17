@@ -26,7 +26,7 @@ export default {
     setTimeout(() => {
       this.handleView();
       if (this.deviceType === 'desktop') this.smoothScroll.init();
-    }, 500);
+    }, 600);
   },
 
   initMobileEvents() {
@@ -35,7 +35,7 @@ export default {
 
   show(el) {
     TweenMax.to(el, 1, {
-      startAt: { opacity: 0, x: '-5%' },
+      startAt: { opacity: 0, x: '6%' },
       opacity: 1,
       x: '0%',
       onComplete: () => {
